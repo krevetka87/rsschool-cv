@@ -1,0 +1,180 @@
+@import "_normalize.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+	background-color: beige;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+html,
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 35px;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 0 15px 0;
+}
+section {
+	margin: 0 0 30px 0;
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 40px 0;
+	border-bottom: 3px solid grey;
+}
+.header__info {
+	padding: 0 20px 0 0;
+	@media (max-width: 631px) {
+		margin: 0 0 20px 0;
+		h1 {
+			margin: 0 0 10px 0;
+		}
+	}
+}
+
+.main__row {
+	padding: 40px 0;
+	border-bottom: 3px solid grey;
+}
+.info__list li {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 0 0 0 29px;
+	margin: 0 0 10px 0;
+	&:last-child {
+		margin: 0;
+	}
+	a:hover {
+		opacity: 0.8;
+	}
+}
+.info__item_location {
+	background: url("../img/icon_location.png") 0 0 no-repeat;
+}
+.info__item_phone {
+	background: url("../img/icon_phone.png") 0 0 no-repeat;
+}
+.info__item_email {
+	background: url("../img/icon_email.png") 0 0 no-repeat;
+}
+.info__item_discord {
+	background: url("../img/icon_Discord.png") 0 0 no-repeat;
+}
+.main__sum {
+	p {
+		font-size: 17px;
+		line-height: 22px;
+	}
+}
+
+.skills__item {
+	font-size: 16px;
+	line-height: 20px;
+	background: url("../img/icon_minus.png") 0 0 no-repeat;
+	padding: 0 0 0 29px;
+	margin: 0 0 10px 0;
+	&:last-child {
+		margin: 0;
+	}
+}
+pre {
+	overflow: auto;
+	background-color: #f9fdf9;
+	padding: 10px;
+	margin: 5px 0 0 0;
+}
+.main__examples {
+	details {
+		margin: 0 0 20px 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	summary {
+		font-style: italic;
+	}
+}
+.main__experience {
+	margin: 0 0 30px 0;
+	p {
+		font-size: 16px;
+		font-style: italic;
+	}
+}
+.education__item {
+	background: url("../img/icon_square.png") 0 0 no-repeat;
+	padding: 0 0 0 25px;
+	font-size: 17px;
+	span {
+		font-weight: 700;
+	}
+	margin: 0 0 10px 0;
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.languages__item {
+	font-size: 17px;
+	padding: 0 0 0 25px;
+	background: url("../img/icon_square.png") 0 0 no-repeat;
+	margin: 0 0 10px 0;
+	span {
+		font-style: italic;
+	}
+	&:last-child {
+		margin: 0;
+	}
+}
+.footer__row {
+	padding: 40px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__github-link {
+	flex: 1 1 33.333%;
+	text-align: center;
+	font-weight: 700;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.footer__copyright {
+	flex: 1 1 33.333%;
+	text-align: end;
+	color: #838282;
+	&::before {
+		content: "©";
+		padding: 0 5px 0 0;
+	}
+}
+.footer__logo {
+	flex: 1 1 33.333%;
+	padding: 0 15px 0 0;
+}

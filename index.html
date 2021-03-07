@@ -4,11 +4,106 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>HTML & CSS</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<div class="header__info">
+						<h1>Anastasia Bondarenko</h1>
+						<h3>Front-End Developer</h3>
+					</div>
+					<img src="img/photo.jpg" alt="photo" class="header__img">
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="main__row">
+					<section class="main__info info">
+						<h2>Personal Info</h2>
+						<ul class="info__list">
+							<li class="info__item info__item_location"> Moscow, Russia</li>
+							<li class="info__item info__item_phone">
+								<a href="tel:+79258043456">+79258043456</a>
+							</li>
+							<li class="info__item info__item_email">
+								<a href="mailto:bonanast4sia@yandex.ru">bonanast4sia@yandex.ru</a>
+							</li>
+							<li class="info__item info__item_discord">Anastasia Bond(@krevetka87)</li>
+						</ul>
+					</section>
+					<section class="main__sum">
+						<h2>About Me</h2>
+						<p>I have been working in the insurance industry for over ten years, but in 2020 I decided to change
+							my profession and began to learn HTML and CSS. Since February 2021 I am taking a
+							JavaScript/Front-End Course in RS School. On this course I plan to gain new knowledge in the field
+							of Web Development and I want to develop in this direction in the future.
+						</p>
+					</section>
+					<section class="main__skills skills">
+						<h2>skills</h2>
+						<ul class="skills__list">
+							<li class="skills__item">HTML5</li>
+							<li class="skills__item">CSS3</li>
+							<li class="skills__item">SASS</li>
+							<li class="skills__item">BEM</li>
+							<li class="skills__item">JavaScript</li>
+							<li class="skills__item">Git</li>
+							<li class="skills__item">Figma, Adobe Photoshop, Avocode</li>
+							<li class="skills__item">VS Code, Sublime Text, DevTools</li>
+						</ul>
+					</section>
+					<section class="main__examples">
+						<h2>Code examples</h2>
+						<details open>
+							<summary>Example 1:</summary>
+							<pre><code>function towelSort(matrix = []) {return [].concat(...matrix.map((e, i) => i % 2 ? e.reverse() : e))}
+						</code></pre>
+						</details>
+						<details open>
+							<summary>Example 2:</summary>
+							<pre><code>function reverse(n) {return Number(Math.abs(n).toString().split('').reverse().join(''))}
+						</code></pre>
+						</details>
+					</section>
+					<section class="main__experience">
+						<h2>Experience</h2>
+						<p>This section is under construction…</p>
+					</section>
+					<section class="main__education education">
+						<h2>Education</h2>
+						<ul class="education__list">
+							<li class="education__item"><span>RS School,</span> JavaScript/Front-end Course</li>
+							<li class="education__item">Self-education</li>
+						</ul>
+					</section>
+					<section class="main__languages languages">
+						<h2>Languages</h2>
+						<ul class="languages__list">
+							<li class="languages__item">Russian: <span>Native</span></li>
+							<li class="languages__item">English: <span>Pre-Intermediate (A2)</span></li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row">
+					<a href="https://rs.school/js/" target="_blank" class="footer__logo">
+						<img src="img/rs_school_js.svg" width="100" alt="logo">
+					</a>
+					<a href="https://github.com/krevetka87" target="_blank" class="footer__github-link">My GitHub Account</a>
+					<p class="footer__copyright">2021 Anastasia Bondarenko</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
 
 </html>
